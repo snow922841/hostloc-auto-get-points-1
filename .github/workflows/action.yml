@@ -19,6 +19,8 @@ jobs:
         python-version: '3.x'
     - name: 'Install dependencies'
       run: python -m pip install --upgrade requests
+    - name: 'Install pyaes'  
+      run: python -m pip install pyaes
     - name: 'Get points'
       env:
         HOSTLOC_USERNAME: ${{ secrets.HOSTLOC_USERNAME }}
